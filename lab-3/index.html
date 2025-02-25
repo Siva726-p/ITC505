@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Delivery Research</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body, h1, h2, p, ol, ul, li, strong, code, footer {
+            font-family: 'Press Start 2P', sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #ff5733;
+        }
+        h2 {
+            color: #3498db;
+        }
+        p, li {
+            color: #2ecc71;
+        }
+        strong {
+            color: #e74c3c;
+        }
+        code {
+            color: #8e44ad;
+            background-color: #ecf0f1;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        footer {
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <h1>How Fonts Are Delivered to Browsers</h1>
+    <p>Web fonts enhance the user experience by allowing designers to use custom typography instead of default system fonts. A commonly used method for delivering fonts is via the <code>@font-face</code> rule in CSS.</p>
+    <p>Here’s how you can implement custom fonts on a webpage:</p>
+    <ol>
+        <li>Select a unique font that isn’t commonly found on users’ devices.</li>
+        <li>Obtain the font from a service like Google Fonts or self-host it on your server.</li>
+        <li>Define the font using the <code>@font-face</code> rule in your CSS file.</li>
+        <li>Apply the font to your webpage elements using the <code>font-family</code> property.</li>
+    </ol>
+    <p>This example uses the 'Press Start 2P' font from Google Fonts, giving the page a retro gaming aesthetic.</p>
+    
+    <h2>Benefits of Custom Fonts</h2>
+    <p>Using custom fonts can improve readability, branding, and overall visual appeal. Instead of being limited to generic fonts, websites can stand out with typography that matches their theme and purpose.</p>
+    
+    <h2>Alternative Font Delivery Methods</h2>
+    <p>Besides <code>@font-face</code>, other ways to deliver fonts include:</p>
+    <ul>
+        <li><strong>Google Fonts:</strong> A free service that provides easy font embedding.</li>
+        <li><strong>Adobe Fonts:</strong> A premium service offering high-quality typefaces.</li>
+        <li><strong>Self-Hosting:</strong> Download and store font files on your own server for better control.</li>
+    </ul>
+    
+    <h2>Final Thoughts</h2>
+    <p>Web fonts play a crucial role in modern web design. Implementing them correctly enhances both aesthetics and usability, making content more engaging and visually appealing.</p>
+    
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>

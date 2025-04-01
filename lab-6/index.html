@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6: Color Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Color Palette Generator</h1>
+            <p>Create beautiful color combinations for your next project</p>
+        </header>
+
+        <nav class="menu">
+            <h2>Site Navigation</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h2>Generate Your Palette</h2>
+            <div id="color-generator">
+                <div class="controls">
+                    <button id="generateButton">Generate Random Colors</button>
+                    <div class="mode-selector">
+                        <label>
+                            <input type="radio" name="colorMode" value="random" checked> Random
+                        </label>
+                        <label>
+                            <input type="radio" name="colorMode" value="monochromatic"> Monochromatic
+                        </label>
+                        <label>
+                            <input type="radio" name="colorMode" value="analogous"> Analogous
+                        </label>
+                    </div>
+                </div>
+                <div class="color-display">
+                    <div class="color-box" id="color1">
+                        <div class="color-code">#FFFFFF</div>
+                    </div>
+                    <div class="color-box" id="color2">
+                        <div class="color-code">#FFFFFF</div>
+                    </div>
+                    <div class="color-box" id="color3">
+                        <div class="color-code">#FFFFFF</div>
+                    </div>
+                    <div class="color-box" id="color4">
+                        <div class="color-code">#FFFFFF</div>
+                    </div>
+                </div>
+                <div id="copyMessage" class="copy-message hidden">Color code copied to clipboard!</div>
+            </div>
+        </main>
+
+        <aside class="ad">
+            <a href="https://www.amazon.com/Adobe-Creative-Cloud-Photography-Subscription/dp/B07QKZC3WR/" target="_blank">
+                <img src="ad-image.jpg" alt="Adobe Creative Cloud">
+                <p>Get Adobe Creative Cloud for your design projects!</p>
+            </a>
+        </aside>
+
+        <footer class="footer">
+            <div class="addendum">
+                <h3>Addendum</h3>
+                <p><strong>Problem Solved:</strong> For this lab, I developed an interactive color palette generator that helps web designers and developers find harmonious color schemes. The application demonstrates the practical use of JavaScript event handling and DOM manipulation.</p>
+                <p><strong>Implementation Approach:</strong> I built this application using a combination of HTML5, CSS Grid for the Holy Grail layout, and vanilla JavaScript for functionality. The color generation logic uses the HSL color model to create visually pleasing color combinations. Users can select from three different color generation methods: completely random, monochromatic (variations of a single hue), and analogous (colors adjacent on the color wheel).</p>
+                <p><strong>Challenges & Solutions:</strong> The most significant challenge I faced was implementing the color theory algorithms, particularly for the analogous and monochromatic modes. To overcome this, I had to learn about color theory and implement conversions between color systems (RGB, HSL, and HEX). I also encountered some issues with the clipboard API when implementing the color copying feature, which I resolved by adding proper error handling and visual feedback for the user when a color is copied. The responsive design was another challenge that required careful testing across different screen sizes to ensure the layout remained functional and visually appealing.</p>
+            </div>
+            <p>Last updated: 
+                <span id="lastModified"></span>
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>

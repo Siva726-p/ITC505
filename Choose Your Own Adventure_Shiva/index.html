@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Adventure Game</h1>
+    <p id="story-text"></p>
+    <img id="story-image" src="" alt="Story Image" width="300"><br>
+    <div id="choices-container"></div>
+
+    <footer>
+        <p>Developed by Siva Prasad Ponna</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+</body>
+</html>

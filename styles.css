@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+}
+
+/* Grid Layout */
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    grid-area: header;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 3px solid #fff;
+}
+
+/* Navigation */
+nav {
+    grid-area: nav;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-right: 2px solid #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffdd57;
+}
+
+/* Main Content */
+main {
+    grid-area: main;
+    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Interactive Button */
+button {
+    background: #ffdd57;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #ff9900;
+    transform: scale(1.1);
+}
+
+/* Advertisement Sidebar */
+aside {
+    grid-area: aside;
+    text-align: center;
+    padding: 30px;
+}
+
+aside img {
+    width: 180px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.2s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+aside img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid #fff;
+}
+
+footer p {
+    margin: 5px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 - Holy Grail Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Number Transformation</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Square Root of Even Numbers & Square of Odd Numbers (1-10)</h2>
+            <button onclick="calculateNumbers()">Calculate</button>
+            <p id="output"></p>
+        </main>
+        <aside>
+            <!-- Clickable Temu Image Link -->
+            <a href="https://www.temu.com/" target="_blank">
+               <img src="unnamed.png" alt="Advertisement">
+
+            </a>
+        </aside>
+        <footer>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p><strong>Addendum:</strong> This project finds the **square root of even numbers** and **the square of odd numbers** from 1-10 using JavaScript. The biggest challenge was ensuring the proper handling of mathematical operations, which was resolved by using conditional logic.</p>
+            <p><strong>Developed by Shiva</strong></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+</html>

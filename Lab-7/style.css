@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7f50, #ffb6c1); /* Vibrant gradient background */
+    color: #333;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Container for the Form */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #ffe4e1, #fff0f5); /* Light pastel gradient */
+}
+
+/* Heading */
+h1 {
+    font-size: 2.2rem;
+    color: #2a7f62;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for emphasis */
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+label {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+
+input[type="text"] {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus {
+    border-color: #2a7f62;
+    outline: none;
+}
+
+button {
+    background-color: #2a7f62;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 320px;
+}
+
+button:hover {
+    background-color: #236e51;
+}
+
+/* Addendum Section Styling */
+.addendum {
+    margin-top: 30px;
+    background-color: #e9f9f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    background: linear-gradient(135deg, #f0f8ff, #e6f7ff); /* Light blue gradient */
+}
+
+.addendum h2 {
+    font-size: 1.5rem;
+    color: #3a7f63;
+    margin-bottom: 15px;
+}
+
+.addendum ul {
+    list-style: disc;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+.addendum ul li {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Credit Section */
+.credit {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Footer Section */
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    form {
+        gap: 12px;
+    }
+
+    input[type="text"] {
+        max-width: 100%;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Lib Story Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mad Lib Story Generator</h1>
+        <p>Fill out the form below and click "Submit" to create a fun story!</p>
+
+        <form id="madLibForm">
+            <label for="adjective">Adjective:</label>
+            <input type="text" id="adjective" name="adjective" required>
+
+            <label for="noun">Noun:</label>
+            <input type="text" id="noun" name="noun" required>
+
+            <label for="verb">Verb:</label>
+            <input type="text" id="verb" name="verb" required>
+
+            <label for="adverb">Adverb:</label>
+            <input type="text" id="adverb" name="adverb" required>
+
+            <label for="place">Place:</label>
+            <input type="text" id="place" name="place" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="credit">
+            <p>Developed by Siva Prasad Ponna</p>
+            <p>Last updated: <span id="lastModified"></span></p>
+        </div>
+    </div>
+
+    <div class="addendum">
+        <h2>Addendum:</h2>
+        <ul>
+            <li>This project was created to showcase a Mad Libs generator using basic HTML, CSS, and JavaScript.</li>
+            <li>The form collects inputs and generates a story with the given words, providing fun and interactive user engagement.</li>
+            <li>It demonstrates simple form handling, input validation, and dynamic content generation in JavaScript.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <!-- Footer is empty, you can add any other footer content here if needed in the future -->
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

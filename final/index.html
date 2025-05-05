@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lights Out Game</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #addendum {
+      margin-top: 40px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+    #addendum h2 {
+      text-align: center;
+      color: #333;
+      font-size: 1.5em;
+    }
+    #addendum h3 {
+      color: #444;
+      margin-top: 1.2em;
+    }
+    #addendum p {
+      margin: 0.5em 0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lights Out</h1>
+  <div id="game-board"></div>
+
+  <div id="addendum">
+    <h2>Project Addendum</h2>
+
+    <h3>1. Development Process</h3>
+    <p>I created a 5x5 grid using HTML and styled it with CSS. JavaScript logic toggles the clicked cell and its neighbors. I ensured solvability by simulating random valid clicks on an all-white board.</p>
+
+    <h3>2. Creative Choices</h3>
+    <p>The design is minimalist and intuitive. I used black and white to clearly differentiate "on" and "off" states. The interface is mobile-friendly and simple.</p>
+
+    <h3>3. Challenges & Solutions</h3>
+    <p><strong>Challenge:</strong> Random board setup needed to be solvable.<br>
+    <strong>Solution:</strong> Instead of random toggling states directly, I simulated random valid user clicks to ensure all configurations are solvable.</p>
+    <p><strong>Challenge:</strong> Win condition detection.<br>
+    <strong>Solution:</strong> Used a loop to check if all cells are "off" (white) after each click.</p>
+
+    <h3>4. Insights Gained</h3>
+    <p>This project reinforced the importance of logic flow and modular design. I also gained more confidence in combining CSS and JS for interactive UI behavior.</p>
+  </div>
+
+  <footer>
+    <p>Last updated: <span id="lastModified"></span></p>
+  </footer>
+  <script type="text/javascript">
+    var x = document.lastModified;
+    document.getElementById('lastModified').textContent = x;
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
